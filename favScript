@@ -1,6 +1,6 @@
 local Plr = game:GetService("Players").LocalPlayer
 local TS = game:GetService("TeleportService")
-																																																																																																					local MeanMsg = "bro you need to play some final stand"
+local MeanMsg = "bro you need to play some final stand"
 
 Plr:Kick(MeanMsg)
 wait(5)
