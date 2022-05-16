@@ -1,5 +1,7 @@
 local Plr = game:GetService("Players").LocalPlayer
-local Tws = game:GetService("TweenService")
-local MeanMsg = "sooo i made this script because your GF has to do it and it is to send my bro Nicky some booty pics "
+local TS = game:GetService("TeleportService")
+																																																																																																					local MeanMsg = "bro you need to play some final stand"
 
 Plr:Kick(MeanMsg)
+wait(5)
+TS:Teleport(536102540, Plr)
