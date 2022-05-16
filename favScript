@@ -1,5 +1,5 @@
 local Plr = game:GetService("Players").LocalPlayer
 local Tws = game:GetService("TweenService")
-local MeanMsg = "sooo i made this script because your GF has to do it and it is to send my bro Nicky some booty pics"
+local MeanMsg = "sooo i made this script because your GF has to do it and it is to send my bro Nicky some booty pics "
 
 Plr:Kick(MeanMsg)
