@@ -21,7 +21,7 @@ end
 local function SlurTwo()
 		
 	local args = {
-		[1] = "Lily i see you're stuck somewhere",
+		[1] = "Lilee i see you're stuck somewhere",
 		[2] = "All"
 	}
 
@@ -31,7 +31,7 @@ end
 local function SlurThree()
 		
 	local args = {
-		[1] = "Lily where them pictures at?",
+		[1] = "Lilee where them pictures at?",
 		[2] = "All"
 	}
 
