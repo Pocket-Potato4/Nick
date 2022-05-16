@@ -8,7 +8,7 @@ local Slur2 = Instance.new("TextButton")
 local Slur3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local function SlurOne()
-	Toggle.Text = "Farm: ON"	
+		
 	local args = {
 		[1] = "My Gworl will eat my BWC",
 		[2] = "All"
@@ -19,7 +19,7 @@ local function SlurOne()
 end
 
 local function SlurTwo()
-	Toggle.Text = "Farm: ON"	
+		
 	local args = {
 		[1] = "Lily i see you're stuck somewhere",
 		[2] = "All"
@@ -29,7 +29,7 @@ local function SlurTwo()
 end
 
 local function SlurThree()
-	Toggle.Text = "Farm: ON"	
+		
 	local args = {
 		[1] = "Lily where them pictures at?",
 		[2] = "All"
