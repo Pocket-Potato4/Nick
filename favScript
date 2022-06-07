@@ -1,101 +1,13 @@
+-------------------[DONT TOUCH]-----------------------------
+local detect = game:GetService("Players"):FindFirstChild(Player)
+local Char = detect.Character.UpperTorso.Position.X
+local Char1 = detect.Character.UpperTorso.Position.Y
+local Char2 = detect.Character.UpperTorso.Position.Z
 
 
-local ScreenGui = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Slur1 = Instance.new("TextButton")
-local Slur2 = Instance.new("TextButton")
-local Slur3 = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
-local function SlurOne()
-		
-	local args = {
-		[1] = "My Gworl will eat my BWC",
-		[2] = "All"
-	}
+Find = game.Players:FindFirstChild(Player)
 
-	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
+if Find then
+	print("Teleporting")
+	game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1.2), {CFrame = CFrame.new(Char,Char1,Char2)}):Play()
 end
-
-local function SlurTwo()
-		
-	local args = {
-		[1] = "Lilee i see you're stuck somewhere",
-		[2] = "All"
-	}
-
-	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-end
-
-local function SlurThree()
-		
-	local args = {
-		[1] = "Lilee where them pictures at?",
-		[2] = "All"
-	}
-
-	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-end
-	
-	
---Properties:
-
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main.Position = UDim2.new(0.234585434, 0, 0.16196318, 0)
-Main.Size = UDim2.new(0, 259, 0, 349)
-Main.Active = true
-Main.Draggable = true
-UICorner.Parent = Main
-
-Slur1.Name = "Slur1"
-Slur1.Parent = Main
-Slur1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Slur1.Position = UDim2.new(0.112086341, 0, 0.365557343, 0)
-Slur1.Size = UDim2.new(0, 200, 0, 50)
-Slur1.Font = Enum.Font.SourceSans
-Slur1.TextColor3 = Color3.fromRGB(0, 0, 0)
-Slur1.TextSize = 14.000
-Slur1.MouseButton1Down:Connect(function()
-	SlurOne()
-end)
-
-
-Slur2.Name = "Slur2"
-Slur2.Parent = Main
-Slur2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Slur2.Position = UDim2.new(0.112086341, 0, 0.536026955, 0)
-Slur2.Size = UDim2.new(0, 200, 0, 50)
-Slur2.Font = Enum.Font.SourceSans
-Slur2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Slur2.TextSize = 14.000
-Slur2.MouseButton1Down:Connect(function()
-	SlurTwo()
-end)
-
-Slur3.Name = "Slur3"
-Slur3.Parent = Main
-Slur3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Slur3.Position = UDim2.new(0.112086341, 0, 0.716621578, 0)
-Slur3.Size = UDim2.new(0, 200, 0, 50)
-Slur3.Font = Enum.Font.SourceSans
-Slur3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Slur3.TextSize = 14.000
-Slur3.MouseButton1Down:Connect(function()
-	SlurThree()
-end)
-
-TextLabel.Parent = Main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.112086341, 0, 0.0470939279, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Omega UWU script V.6669"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
